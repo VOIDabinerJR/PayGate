@@ -54,7 +54,7 @@
 
 body { 
     font-family: "Poppins", sans-serif;
-    
+  
     width: 100vw;
     height: 100vh;
     font-size: 0.88rem;
@@ -73,6 +73,7 @@ body {
 }
 a{
     color: var(--clr-dark);
+    text-decoration: none;
 }
 h1{
     font-weight: 800;
@@ -182,7 +183,150 @@ aside .sidebar{
     border-left: 5px solid var(--padding-1); 
 }
 
+aside .sidebar a.active::before{
+     content: '';
+     width: 6px;
+     height: 100%;
+     background-color: var(--clr-primary);
+}
+aside .sidebar a:hover{
+    color: var(--clr-primary);
+}
+
+aside .sidebar a:hover span{
+   margin-left: 1rem;
+    transition: .4s ease;
+
+}
+
+aside .sidebar a span.msg_count{
+    background: var(--clr-danger);
+    color: var(--clr-white);
+    padding: 2px 5px;
+    font-size: 11px;
+    border-radius:var(--border-radius-1) ;
+}
+/***********
+Start main section style
+**********************/
 
 
+main {
+    margin: 1.4rem;
+    width: auto;
+}
 
+main input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--clr-dark);
+}
+
+main.date{
+     display: inline-block;
+     background-color: var(--clr-white);
+     border-radius: var(--border-radius-1);
+     margin-top: 1rem;
+     pad: 0.5rem 1.6rem;
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    gap: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+main .insights>div{
+    background-color: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 3s ease;
+    width: 250px;
+    height: 200px;
+
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+
+}
+
+main .insights > div span{
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--clr-white);
+    font-size: 2rem;
+}
+
+main .insights > div.expenses span{
+    background-color: var(--clr-danger);
+}
  
+main .insights > div.income span{
+    background-color: var(--clr-success);
+}
+
+main .insights > div.middle{
+   display: flex;
+   align-items: center;
+   justify-content: space-between ;
+
+}
+main .insights > div.middle h1{
+    font-size: 1.5rem;
+}
+main h1{
+    color: var(--clr-dark);
+}
+
+main .insights p{
+    color: var(--clr-dark);
+}
+
+main .insights .progress{
+    position: relative;
+    height: 68px;
+    width: 68px;
+    border-radius: 50px;
+} 
+
+main .insights svg {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+
+}
+
+main .insights svg circle{
+    fill: none;
+    stroke: var(--clr-primary);
+    transform: rotate(270,80,80);
+    stroke-width: 5px;
+}
+
+main .insights .sales svg circle {
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+main .insights .expenses svg circle {
+    stroke-dashoffset: 10;
+    stroke-dasharray: 150;
+}
+
+main .insights .progress .number{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

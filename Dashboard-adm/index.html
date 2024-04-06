@@ -41,6 +41,7 @@
                 <a href="#" > 
                     <span class="material-symbols-outlined"> mail </span>
                     <h3> Messages</h3>
+                    <span class="msg_count">123</span>
                 </a>
                 <a href="#" > 
                     <span class="material-symbols-outlined"> receipt_long </span>
@@ -53,7 +54,7 @@
                 <a href="#" > 
                     <span class="material-symbols-outlined"> settings </span>
                     <h3> settings</h3>
-                </a>
+                </a>    
                 <a href="#" > 
                     <span class="material-symbols-outlined"> ADD </span>
                     <h3> Add Products</h3>
@@ -72,7 +73,119 @@
 
         <!-- main section start-->
         <main>
-            <h1>Main</h1>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+             <!-- start insights-->
+            <div class="insights">
+                <!-- start selling-->
+                <div class="sales">
+                    <span class="material-symbols-outlined"> trending_up</span>
+                    <div class="middle">
+                        <div class="left"> 
+                            <h3>Total Sales</h3>
+                            <h1>$ 25,332</h1>
+                        </div>
+                        <div class="progress"></div>
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">70%</div>
+                    </div>
+                    <small>Lasr 24 Hours</small>
+                </div>
+                
+                <!-- end selling-->
+
+                <!-- start expenses-->
+                <div class="expenses">
+                    <span class="material-symbols-outlined"> stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left"> 
+                            <h3>Income</h3>
+                            <h1>$ 25,332</h1>
+                        </div>
+                        <div class="progress"></div>
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">70%</div>
+                    </div>
+                    <small>Lasr 24 Hours</small>
+                </div>
+                
+                <!-- end expenses-->
+
+                <!-- start selling-->
+                <div class="sales">
+                    <span class="material-symbols-outlined"> trending_up</span>
+                    <div class="middle">
+                        <div class="left"> 
+                            <h3>Total Sales</h3>
+                            <h1>$ 25,332</h1>
+                        </div>
+                        <div class="progress"></div>
+                        <svg>
+                            <circle r="30" cy="40" cx="40"></circle>
+                        </svg>
+                        <div class="number">70%</div>
+                    </div>
+                    <small>Lasr 24 Hours</small>
+                </div>
+                
+                <!-- end selling-->
+                
+            </div>
+             <!-- end inside-->
+
+             <!--start recent order-->
+             <div class="recent_order">
+                <h1>Recent Orders</h1>
+                <table>
+
+
+                    <thead>
+                        <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Payments</th>
+                        <th>Stutus</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <td>Recharge 1000 MZN</td>
+                        <td>20</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tbody>
+                    <tbody>
+                        <td>Recharge 1000 MZN</td>
+                        <td>20</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tbody>
+                    <tbody>
+                        <td>Recharge 1000 MZN</td>
+                        <td>20</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tbody>
+                </table>
+
+
+
+
+             </div>
+
+
+             
+
 
         </main>
 
@@ -87,7 +200,8 @@
           <!-- right section end-->
 
 
-        </div>    
+        </div>   
+     
 
     <script src="script.js"></script>
 </body>
