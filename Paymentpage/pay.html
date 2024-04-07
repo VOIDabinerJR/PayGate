@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - VOID</title>
+    <link rel="stylesheet" href="pay.css">
+
+</head>
+<body>
+    <div class="container">
+        <h6>Checkout</h6>
+        <span>x</span>
+        <h1>Payment Method</h1>
+        <form action="" > 
+            <label for="country">
+                <select name="country" id="country">
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Angola">Angola</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </label>
+            <label for="cardnumber">Card Number
+                <input type="text" name="cardnumber" id="cardnumber" maxlength="19" onkeypress="cardspace()"/>
+            </label>
+            <div class="float">
+                <label for="validtill">Valid till
+                    <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()"/>
+                </label>
+                <label for="cvv">CVV
+                    <input type="text" name="cvv" id="cvv" maxlength="3"/>
+                </label>
+            </div>
+                <label for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox"/>
+                    <p>Payment Address is the predifined</p>
+                </label>
+                <button>Pagar 200.00 MZN</button>
+            
+        </form>
+    </div>
+
+    <script src="pay.js"></script>
+</body>
+</html>
