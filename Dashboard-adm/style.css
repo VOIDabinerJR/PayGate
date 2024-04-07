@@ -233,10 +233,9 @@ main.date{
 
 main .insights{
     display: grid;
-    grid-template-columns: repeat(3.1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 1.6rem;
-    display: flex;
-    align-items: center;
+    
 }
 
 main .insights>div{
@@ -246,9 +245,7 @@ main .insights>div{
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
     transition: all 3s ease;
-    width: 250px;
-    height: 200px;
-
+   
 }
 
 main .insights > div:hover{
@@ -291,16 +288,17 @@ main .insights p{
 
 main .insights .progress{
     position: relative;
-    height: 68px;
-    width: 68px;
+    height: 30px;
+    width: 260px;
     border-radius: 50px;
 } 
 
 main .insights svg {
     height: 150px;
     width: 150px;
-    position: absolute;
-    top: 0;
+    position:absolute;
+    top: -220%;
+    left: 70%;
 
 }
 
@@ -322,11 +320,43 @@ main .insights .expenses svg circle {
 
 main .insights .progress .number{
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: -140%;
+    left: 37%;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+main .recent_order{
+    margin-top: 2rem;
+}
+
+main .recent_order h2{
+    color: var(--clr-dark);
+}
+
+main .recent_order table{
+    background-color: var(--clr-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+    color: var(--clr-dark) ;  
+}
+
+main .recent_order table:hover{
+    box-shadow: none;
+}
+
+main table tbody tr{
+    height: 3.8rem;
+    border-bottom: 1px solid var(--clr-white);
+}
+
+main table tbody tr:last-child td {
+    border: none;
+
 }
