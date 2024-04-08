@@ -16,3 +16,21 @@ function addSlashes(){
      
 
 }
+
+function salvar() {
+    
+    var nome = document.getElementById('cardnumber').value;
+    var idade = document.getElementById('validtill').value;
+
+  
+    var cartoes = {
+        "nome": nome,
+        "idade": idade
+    };
+
+    
+    var jsonString = JSON.stringify(cartoes);
+
+    // Exibe o objeto JSON resultante
+    alert(jsonString);
+}
