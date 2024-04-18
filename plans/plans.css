@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #1743e3;
+
+
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+    background-color: #f7f7f8;
+    border-radius: 20px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 25);
+    padding: 2rem;
+    margin: 1rem;
+    transform: all 0.2s ease-in;
+
+}
+
+.card-wrapper:hover {
+    transform: scale(1.1);
+
+}
+
+.card-header {
+    margin: 1rem;
+    text-align: center;
+
+}
+
+.card-header>span {
+    color: #1743e3;
+    font-size: 60px;
+}
+
+.card-wrapper:hover .card-header>h2 {
+    transform: scale(1.1);
+    color: #1743e3;
+    letter-spacing: 2;
+
+}
+
+.card-details {
+    width: 100%;
+}
+
+.card-details>p {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #e6e6f1;
+
+}
+
+.card-details>p span {
+    color: green;
+}
+
+.card-price {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+
+}
+
+.card-price > p {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-price > p> sup,
+.card-price > p> sub {
+    font-size: 1rem;
+}
+.card-button {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #1743e3;
+    border: 2px solid #1743e3;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+
+}
+
+/* comecar start*/
+.comecar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #001870;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+   
+
+}
+.comecar > h1 {
+    color: #e6e6f1;
+    font-size: 3rem;
+    
+
+}
+.comecar >h1 >span{
+    color: aqua;
+}
+
+/* comecar end*/
+
+/*** Footer start **/
+footer {
+    background: #eaeaea;
+}
+/*** Footer end **/
