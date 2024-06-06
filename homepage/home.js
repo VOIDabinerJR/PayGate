@@ -98,3 +98,32 @@ function changeFilter(value) {
 
 // Carregar tarefas ao carregar a página
 loadTasks();
+function cs() {
+    d
+}
+
+//document.getElementById("btn-criar-conta").addEventListener("click", function() {
+ //   window.alert("Sistema temporariamente indisponível devido a problemas no BackEnd, voltamos em breve [89%]");
+//});
+
+// comentar depois
+
+//modal erro backend
+document.getElementById("btn-criar-conta").addEventListener("click", function() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+});
+
+document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+});
+
+
+window.addEventListener("click", function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
